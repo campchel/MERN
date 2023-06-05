@@ -1,0 +1,98 @@
+
+
+// 1. isPrime
+
+Number.prototype.isPrime = function() {
+        for( let i=2; i<Math.sqrt(this); i++ ) {
+            if( this % i === 0 ) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+const { performance } = require('perf_hooks');
+const start = performance.now();
+let primeCount = 0;
+let num = 2; 
+while( primeCount < 1e4 ) {
+    if( num.isPrime() ) {
+        primeCount++;
+    }
+    num++;
+}
+console.log(`The 10,000th prime number is ${num-1}`);
+console.log(`This took ${performance.now() - start} milliseconds to run`);
+
+// The 10,000th prime number is 104003    This took 527.2864999994636 milliseconds to run
+// The 100,000th prime number is 1297001     This took 11748.888700000942 milliseconds to run
+
+// const { performance } = require('perf_hooks');
+// const start = performance.now();
+// let primeCount = 0;
+// let num = 2; 
+// while( primeCount < 1e5 ) {
+//     if( num.isPrime() ) {
+//         primeCount++;
+//     }
+//     num++;
+// }
+// console.log(`The 100,000th prime number is ${num-1}`);
+// console.log(`This took ${performance.now() - start} milliseconds to run`);
+
+
+
+// 2. Fibonacci
+
+// Recursive
+const fib_rec_start = performance.now();
+function rFib( n ) {
+        if ( n < 2 ) {
+            return n;
+        }
+        return rFib( n-1 ) + rFib( n-2 );
+    }
+console.log(rFib(20))
+console.log(`Recursive Fibonacci took ${performance.now() - fib_rec_start} milliseconds to run`);
+
+// Recursive Fibonacci took 6.403200000524521 milliseconds to run
+
+
+// Iterative
+const fib_it_start = performance.now();
+    function iFib( n ) {
+        const vals = [ 0, 1 ];
+        while(vals.length-1 < n) {
+            let len = vals.length;
+            vals.push( vals[len-1] + vals[len-2] );
+            }
+    return vals[n];
+    }
+console.log(iFib(20))
+console.log(`Iterative Fibonacci took ${performance.now() - fib_it_start} milliseconds to run`);
+
+// Iterative Fibonacci took 3.2091000005602837 milliseconds to run
+//Iterative fib is faster because it doesn't need to recalculate numbers like recursion
+
+
+
+// 3 Reversing a String
+
+const story = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa nihil repellat nulla laboriosam maxime, quia aliquam ipsam reprehenderit delectus reiciendis molestias assumenda aut fugit tempore laudantium tempora aspernatur? Repellendus consequatur expedita doloribus soluta cupiditate quae fugit! Aliquid, repellat animi, illum molestias maiores, laboriosam vero impedit iusto mollitia optio labore asperiores!";
+
+const story1 = performance.now();
+const reversed1 = story.split("").reverse().join("");
+
+console.log(`Reversed story1 took ${performance.now() - story1} milliseconds to run`);
+
+// Reversed story1 took 0.04580000042915344 milliseconds to run
+
+
+const story2 = performance.now();
+let reversed2 = story.split("").reverse().join("");
+for(let i=story.length-1;i>0;i--){
+    reversed2 += story[i];
+}
+console.log(`Reversed story2 took ${performance.now() - story2} milliseconds to run`);
+
+// Reversed story2 took 0.04439999908208847 milliseconds to run
