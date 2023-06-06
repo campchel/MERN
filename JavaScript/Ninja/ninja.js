@@ -6,24 +6,22 @@ class Ninja {
         this.strength = 3;
     }
     sayName() {
-        console.log('My name is ${this.name}');
-        return this;
+        console.log('My name is ' +  this.name);
     }
 
     showStats() {
-        console.log('Name:  ${this.name}')
-        console.log('Health:  ${this.health}')
-        console.log('Speed:  ${this.speed}')
-        console.log('Strength:  ${this.strength}')
-        return this;
+        console.log(`Name: ${this.name} \n Health: ${this.health} \n Speed: ${this.speed} \n Strength: ${this.strength}`)
     }
 
     drinkSake(){
-        console.log('${this.name} drank Sake');
+        console.log(this.name + ' drank Sake');
         this.health += 10;
-        return this;
     }
 }
 
     const ninja1 = new Ninja("CaleeAnn");
-    ninja1.sayName().showStats().drinkSake().showStats();
+
+    ninja1.sayName()
+    ninja1.showStats()
+    ninja1.drinkSake()
+    ninja1.showStats();
