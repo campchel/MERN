@@ -1,0 +1,12 @@
+.App {
+  padding: 20px;
+  margin: 20px;
+  background-color: gray;
+}
+
+.flex{
+  display: flex;
+}
+.main-gap{
+  gap: 20px;
+}
