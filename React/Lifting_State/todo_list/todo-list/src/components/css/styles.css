@@ -1,0 +1,39 @@
+*{
+    background: black;
+    color: yellow;
+}
+.container-input {
+    margin-top: 100px;
+    margin-left: 100px;
+    justify-content: center;
+    width: 300px
+}
+
+.add-btn {
+    margin: 10px;
+    box-shadow: 1px 1px 1px 1px;
+    background-color: teal;
+    color: white;
+    width: 100px;
+    border-radius: 10%;
+}
+
+.todoList {
+    color: blue;
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid grey;
+
+}
+
+.delete-btn {
+    margin: 10px;
+    background-color: orange;
+    color: white;
+    width: 100px;
+
+}
+
+.completed {
+    text-decoration: line-through;
+}
