@@ -1,0 +1,262 @@
+Get all
+"results": [
+        {
+            "birthday": {
+                "year": "1985",
+                "month": 4,
+                "day": 12
+            },
+            "_id": "64932ad1b4cb1e842e809b7f",
+            "name": "Chelsey Campbell",
+            "home_state": "Idaho",
+            "lucky_number": 21
+        },
+        {
+            "birthday": {
+                "year": 1985,
+                "month": 3,
+                "day": 18
+            },
+            "_id": "64932b66b4cb1e842e809b80",
+            "name": "CaleeAnn Wrath",
+            "home_state": "Washington",
+            "lucky_number": 17
+        },
+        {
+            "birthday": {
+                "year": 1979,
+                "month": 5,
+                "day": 17
+            },
+            "_id": "64932bd9b4cb1e842e809b81",
+            "name": "Ann Minson",
+            "home_state": "Utah",
+            "lucky_number": 13
+        },
+        {
+            "birthday": {
+                "year": 1985,
+                "month": 5,
+                "day": 7
+            },
+            "_id": "64932cb8b4cb1e842e809b82",
+            "name": "CeeCee Slay",
+            "home_state": "Maine",
+            "lucky_number": 7
+        },
+        {
+            "birthday": {
+                "year": 1985,
+                "month": 1,
+                "day": 13
+            },
+            "_id": "64932d4fb4cb1e842e809b83",
+            "name": "Cal Fury",
+            "home_state": "Oregon",
+            "lucky_number": 3
+        }
+    ]
+}
+From Washington
+{
+    "results": {
+        "birthday": {
+            "year": 1985,
+            "month": 3,
+            "day": 18
+        },
+        "_id": "64932b66b4cb1e842e809b80",
+        "name": "CaleeAnn Wrath",
+        "home_state": "Washington",
+        "lucky_number": 17
+    }
+}
+Lucky Number 3
+{
+         {
+            "birthday": {
+                "year": 1985,
+                "month": 1,
+                "day": 13
+            },
+            "_id": "64932d4fb4cb1e842e809b83",
+            "name": "Cal Fury",
+            "home_state": "Oregon",
+            "lucky_number": 3
+        }
+}  
+Interests
+{
+    "results": [
+        {
+            "birthday": {
+                "year": "1985",
+                "month": 4,
+                "day": 12
+            },
+            "_id": "64932ad1b4cb1e842e809b7f",
+            "name": "Chelsey Campbell",
+            "home_state": "Idaho",
+            "lucky_number": 21,
+            "interests": [
+                "coding",
+                "brunch",
+                "MongoDB"
+            ]
+        },
+        {
+            "birthday": {
+                "year": 1985,
+                "month": 3,
+                "day": 18
+            },
+            "_id": "64932b66b4cb1e842e809b80",
+            "name": "CaleeAnn Wrath",
+            "home_state": "Washington",
+            "lucky_number": 17,
+            "interests": [
+                "coding",
+                "brunch",
+                "MongoDB"
+            ]
+        },
+        {
+            "birthday": {
+                "year": 1979,
+                "month": 5,
+                "day": 17
+            },
+            "_id": "64932bd9b4cb1e842e809b81",
+            "name": "Ann Minson",
+            "home_state": "Utah",
+            "lucky_number": 13,
+            "interests": [
+                "coding",
+                "brunch",
+                "MongoDB"
+            ]
+        },
+        {
+            "birthday": {
+                "year": 1985,
+                "month": 5,
+                "day": 7
+            },
+            "_id": "64932cb8b4cb1e842e809b82",
+            "name": "CeeCee Slay",
+            "home_state": "Maine",
+            "lucky_number": 7,
+            "interests": [
+                "coding",
+                "brunch",
+                "MongoDB"
+            ]
+        },
+        {
+            "birthday": {
+                "year": 1985,
+                "month": 1,
+                "day": 13
+            },
+            "_id": "64932d4fb4cb1e842e809b83",
+            "name": "Cal Fury",
+            "home_state": "Oregon",
+            "lucky_number": 3,
+            "interests": [
+                "coding",
+                "brunch",
+                "MongoDB"
+            ]
+        }
+    ]
+}
+Individual interests
+{
+    "results": [
+        {
+            "birthday": {
+                "year": "1985",
+                "month": 4,
+                "day": 12
+            },
+            "_id": "64932ad1b4cb1e842e809b7f",
+            "name": "Chelsey Campbell",
+            "home_state": "Idaho",
+            "lucky_number": 21,
+            "interests": [
+                "coding",
+                "brunch",
+                "MongoDB",
+                "riding horses"
+            ]
+        },
+        {
+            "birthday": {
+                "year": 1985,
+                "month": 3,
+                "day": 18
+            },
+            "_id": "64932b66b4cb1e842e809b80",
+            "name": "CaleeAnn Wrath",
+            "home_state": "Washington",
+            "lucky_number": 17,
+            "interests": [
+                "coding",
+                "brunch",
+                "MongoDB",
+                "wood working"
+            ]
+        },
+        {
+            "birthday": {
+                "year": 1979,
+                "month": 5,
+                "day": 17
+            },
+            "_id": "64932bd9b4cb1e842e809b81",
+            "name": "Ann Minson",
+            "home_state": "Utah",
+            "lucky_number": 13,
+            "interests": [
+                "coding",
+                "brunch",
+                "MongoDB",
+                "Painting"
+            ]
+        },
+        {
+            "birthday": {
+                "year": 1985,
+                "month": 5,
+                "day": 7
+            },
+            "_id": "64932cb8b4cb1e842e809b82",
+            "name": "CeeCee Slay",
+            "home_state": "Maine",
+            "lucky_number": 7,
+            "interests": [
+                "coding",
+                "brunch",
+                "MongoDB",
+                "sewing"
+            ]
+        },
+        {
+            "birthday": {
+                "year": 1985,
+                "month": 1,
+                "day": 13
+            },
+            "_id": "64932d4fb4cb1e842e809b83",
+            "name": "Cal Fury",
+            "home_state": "Oregon",
+            "lucky_number": 3,
+            "interests": [
+                "coding",
+                "brunch",
+                "MongoDB",
+                "drawing"
+            ]
+        }
+    ]
+}
