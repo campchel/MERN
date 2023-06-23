@@ -44,15 +44,15 @@ export default function Update() {
             <form onSubmit={submitProduct} >
                 <div>
                 <label htmlFor='title' >Title</label>
-                <input type='text' name='title' placeholder={product.title} onChange={changeTitle} />
+                <input type='text' name='title' placeholder={product.title} onChange={updateTitle} />
                 </div>
                 <div>
                 <label htmlFor='price' >Price</label>
-                <input type='number' name='price' placeholder={product.price} onChange={changePrice} />
+                <input type='number' name='price' placeholder={product.price} onChange={updatePrice} />
                 </div>
                 <div>
                 <label htmlFor='description' >Description</label>
-                <input type='text' name='description' placeholder={product.description} onChange={changeDescription} />
+                <input type='text' name='description' placeholder={product.description} onChange={updateDescription} />
                 </div>
                 <div>
                     <button>Submit</button>

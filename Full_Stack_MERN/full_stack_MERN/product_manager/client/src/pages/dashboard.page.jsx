@@ -9,15 +9,15 @@ export default function Dashboard() {
     const [ description, setDescription ] = useState('')
     const navigate = useNavigate()
 
-    const changeTitle = (e) => {
+    const updateTitle = (e) => {
         setTitle(e.target.value)
     }
 
-    const changePrice = (e) => {
+    const updatePrice = (e) => {
         SetPrice(e.target.value)
     }
 
-    const changeDescription = (e) => {
+    const updateDescription = (e) => {
         setDescription(e.target.value)
     }
 
@@ -41,7 +41,7 @@ export default function Dashboard() {
                     className="form-control"
                     id="title"
                     value={title}
-                    onChange={changeTitle}
+                    onChange={updateTitle}
                 />
             </div>
 
@@ -54,7 +54,7 @@ export default function Dashboard() {
                     className="form-control"
                     id="price"
                     value={price}
-                    onChange={changePrice} 
+                    onChange={updatePrice} 
                 />
             </div>
 
@@ -67,7 +67,7 @@ export default function Dashboard() {
                     id="description"
                     rows="3"
                     value={description}
-                    onChange={changeDescription}
+                    onChange={updateDescription}
                 ></textarea>
             </div>
 
