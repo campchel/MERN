@@ -14,7 +14,7 @@ export default function Dashboard() {
     }
 
     const updatePrice = (e) => {
-        SetPrice(e.target.value)
+        setPrice(e.target.value)
     }
 
     const updateDescription = (e) => {
